@@ -28,6 +28,7 @@ import { PermissionMiddleware } from "./middleware/permission.middleware";
 import { RolePermissionModule } from "./permissionRbac/rolePermissionMapping/role-permission.module";
 import { LocationModule } from "./location/location.module";
 import { KafkaModule } from "./kafka/kafka.module";
+import { BookmarkModule } from "./bookmark/bookmark.module";
 import kafkaConfig from "./kafka/kafka.config";
 @Module({
   imports: [
@@ -55,6 +56,7 @@ import kafkaConfig from "./kafka/kafka.config";
     RolePermissionModule,
     LocationModule,
     KafkaModule,
+    BookmarkModule,
   ],
   controllers: [AppController],
   providers: [AppService, HttpService],

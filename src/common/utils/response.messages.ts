@@ -214,6 +214,14 @@ export const API_RESPONSES = {
   SIGNED_URL_SUCCESS: "Signed URL generated successfully",
   SIGNED_URL_FAILED: "Error while generating signed URL",
   INVALID_FILE_TYPE: "Invalid file type. Allowed file types are: '.jpg','.jpeg','.png','.webp','.pdf','.doc','.docx','.mp4','.mov','.txt','.csv'",
-  FILE_SIZE_ERROR: "File too large. Maximum allowed file size is 10MB."
+  FILE_SIZE_ERROR: "File too large. Maximum allowed file size is 10MB.",
+
+  //Bookmark
+  BOOKMARK_CREATED_SUCCESSFULLY: "Bookmark created successfully",
+  BOOKMARK_UPDATED_SUCCESSFULLY: "Bookmark updated successfully",
+  BOOKMARK_DELETED_SUCCESSFULLY: "Bookmark deleted successfully",
+  BOOKMARK_GET_SUCCESSFULLY: "Bookmark fetched successfully",
+  BOOKMARK_SEARCH_SUCCESSFULLY: "Bookmarks search completed successfully",
+  BOOKMARK_NOT_FOUND: "Bookmark not found"
 };
 

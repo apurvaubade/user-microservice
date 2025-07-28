@@ -58,5 +58,10 @@ export const APIID = {
   SEND_OTP: "api.send.OTP",
   VERIFY_OTP: "api.verify.OTP",
   SEND_RESET_OTP: 'api.send.reset.otp',
-  SIGNED_URL: 'api.get.signedURL'
+  SIGNED_URL: 'api.get.signedURL',
+  BOOKMARK_CREATE: "api.bookmark.create",
+  BOOKMARK_UPDATE: "api.bookmark.update",
+  BOOKMARK_DELETE: "api.bookmark.delete",
+  BOOKMARK_GET: "api.bookmark.get",
+  BOOKMARK_SEARCH: "api.bookmark.search"
 };

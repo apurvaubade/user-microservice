@@ -26,6 +26,8 @@ import { AuthUtils } from "@utils/auth-util";
 import { AutomaticMemberService } from "src/automatic-member/automatic-member.service";
 import { AutomaticMember } from "src/automatic-member/entity/automatic-member.entity";
 import { KafkaModule } from "src/kafka/kafka.module";
+import { PostgresBookmarkService } from "./bookmark-adapter";
+import { Bookmark } from "src/bookmark/entities/bookmark.entity";
 
 
 @Module({
@@ -47,6 +49,7 @@ import { KafkaModule } from "src/kafka/kafka.module";
       CohortAcademicYear,
       AcademicYear,
       AutomaticMember,
+      Bookmark,
     ]),
   ],
   providers: [
@@ -60,6 +63,7 @@ import { KafkaModule } from "src/kafka/kafka.module";
     PostgresAcademicYearService,
     AuthUtils,
     AutomaticMemberService,
+    PostgresBookmarkService,
   ],
   exports: [
     PostgresUserService,
@@ -70,6 +74,7 @@ import { KafkaModule } from "src/kafka/kafka.module";
     CohortAcademicYearService,
     PostgresAcademicYearService,
     AutomaticMemberService,
+    PostgresBookmarkService,
   ],
 })
 export class PostgresModule { }
